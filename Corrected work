@@ -34,16 +34,24 @@ use quotes inside a string, as long as they don't match the quotes surrounding t
 var response = "Ashwin said, "Yes Sir!""; is not a valid variable because use quotes inside a string, as long as they don't match the quotes surrounding the string
 
 Correct and Best Practice:
-
+var greeting = 'It\'s nice to meet you today!';
+var reponse = "Ashwin said, \"Yes Sir!\"";
 
 /*
  * 3. Try 0.3 + 0.1 === 0.4, explain what happen here
  */
 
+0.3 + 0.1 === 0.4
+true
+
+the use of === is an operator used to give strict equality.
+
 
 /*
  * 4. Build a pizza object by using all three object creation method, it must has at least 4 properties
  */
+
+Function Pizza(size, price, ingredients, delivery)
 
 /*
  *  5. Build a Animal object by using object constructor function, and add at least two method to prototype,
