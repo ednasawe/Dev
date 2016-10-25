@@ -28,6 +28,13 @@ var totalNUmber = 100;
 var greeting  =  'It's nice to me you today!';
 var response = "Ashwin said, "Yes Sir!"";
 
+Ans:
+var greeting = 'It's nice to meet you today!'; is not a valid variable because there was use of same quotes inside the string, 
+use quotes inside a string, as long as they don't match the quotes surrounding the string.
+var response = "Ashwin said, "Yes Sir!""; is not a valid variable because use quotes inside a string, as long as they don't match the quotes surrounding the string
+
+Correct and Best Practice:
+
 
 /*
  * 3. Try 0.3 + 0.1 === 0.4, explain what happen here
