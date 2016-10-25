@@ -8,6 +8,20 @@ var first name = 'Jerry';
 var Sch00lName = 'MEST';
 var totalnumber = 100;
 
+Ans:
+var 1stCar = 'Doge'; is not valid because a valid variable should only start with a letter not a number.
+var var = 'variable'; is not a valid varibale because you cannot use the reserved js keywords as names.
+var first name = 'Jerry'; is not a valid variable because a name cannot contain a whitespace.
+var Sch00lName = 'MEST'; is a valid variable because a name can contain letters, digits, dollar signs, and numbers.
+var totalnumber = 100; is not a valid variable because you must use camelCase as a good practice to make the names readbale. 
+
+correct and best practice:
+var car1st = 'Doge';
+var y = 'coconut';
+var firstName = 'Jerry';
+var Sch00lName = 'MEST';
+var totalNUmber = 100;
+
 /*
  * 2. Are the following variable valid? If it is not please explain it and correct them by using the best practise
  */
