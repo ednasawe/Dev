@@ -37,7 +37,7 @@
  */
 
 /*
- * 6. Please remove mike, jerry, adn Enoch from the following array by using slice
+ * 6. Please remove mike, jerry, adn Enoch from the following array by using slice 
  *    var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
  */
 
