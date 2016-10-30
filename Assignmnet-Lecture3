@@ -8,17 +8,34 @@
  *      console.log(this);
  *  }
  *
+ *	function func(){ console.log(this);}
+ *	undefined
+ *	func()
+ *	Window → about:newtab
+ *
  *  func(); // what is the output? Why?
+ 
+ 	The output gives the Window object. This is because the 'this' keyword was not called from an object and therefore 
+	called the closest object it could reach which is the Window object.
  *
  *  var obj = {
- *      func: func // what is the second func here?
+ *      func: func // what is the second func here? The second func is the value assigned to the func attribute
  *  };
- *
+ *	
  *  obj.func(); //what is the output? try to explain why.
+ *	var obj = { func:func};
+ *	undefined
+ *	obj.func
+ *	function func()
+ *	The obj.func returns a function. This i cannot explain!
  *
  *  obj.func.bind(window)(); // what is the output? why?
+ *	obj.func.bind(window)()
+ *	Window → about:newtab This is because the window argument in the bind function tells the bind function to bind the func to 
+ 	the window object.
  *
- *  obj.func.bind(this)();  // what is the output? why?
+ *  obj.func.bind(this)();  // what is the output? why? This returns the Window object because the 'this' keyword calls the 
+ *	window object.
  *
  *  var people = {
  *      name: 'ashwin',
@@ -28,7 +45,9 @@
  *  obj.func.bind(people)(); //what is the output? why?
  */
 
-
+*  obj.func.bind(people)()
+*  Object { name: "Ashwin", age: 40 } 
+*  Because bind is a function that is calling people object.
 
 
 
